@@ -185,7 +185,7 @@ class FailureElementTests(TestCase):
         d = flattenString(None, element)
 
         stringToCheckFor = ""
-        for (lineNumber, sourceLine) in enumerate(source):
+        for lineNumber, sourceLine in enumerate(source):
             template = '<div class="snippet{}Line"><span>{}</span><span>{}</span></div>'
             if lineNumber <= 1:
                 stringToCheckFor += template.format(

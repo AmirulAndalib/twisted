@@ -3397,7 +3397,6 @@ class DeferredFutureAdapterTests(unittest.TestCase):
 
 
 class CoroutineContextVarsTests(unittest.TestCase):
-
     if contextvars is None:
         skip = "contextvars is not available"  # type: ignore[unreachable]
 
@@ -3429,7 +3428,6 @@ class CoroutineContextVarsTests(unittest.TestCase):
         # context is 1 when the function is defined
         @defer.inlineCallbacks
         def testFunction() -> Generator[Deferred[Any], Any, None]:
-
             # Expected to be 2
             self.assertEqual(var.get(), 2)
 
@@ -3593,7 +3591,6 @@ class CoroutineContextVarsTests(unittest.TestCase):
 
         # context is 1 when the function is defined
         async def testFunction() -> bool:
-
             # Expected to be 2
             self.assertEqual(var.get(), 2)
 

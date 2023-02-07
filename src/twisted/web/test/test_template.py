@@ -217,7 +217,6 @@ class XMLFileReprTests(TestCase):
 
 
 class XMLLoaderTestsMixin:
-
     deprecatedUse: bool
     """
     C{True} if this use of L{XMLFile} is deprecated and should emit

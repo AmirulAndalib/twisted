@@ -46,7 +46,6 @@ def skipWithoutEd25519(f):
 
 
 class KeyTests(unittest.TestCase):
-
     if cryptography is None:
         skip = skipCryptography
     if pyasn1 is None:

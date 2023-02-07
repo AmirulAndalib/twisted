@@ -408,7 +408,7 @@ def str2time(s):
 
     if isinstance(s, str):
         s = s.upper().strip()
-        for (suff, mult) in suffixes:
+        for suff, mult in suffixes:
             if s.endswith(suff):
                 return int(float(s[:-1]) * mult)
         try:
@@ -2681,7 +2681,7 @@ class Message(tputil.FancyEqMixin):
 
         items = ((self.answers, nans), (self.authority, nns), (self.additional, nadd))
 
-        for (l, n) in items:
+        for l, n in items:
             self.parseRecords(l, n, strio)
 
     def parseRecords(self, list, num, strio):
@@ -3108,7 +3108,7 @@ class DNSMixin:
 
     def __init__(self, controller, reactor=None):
         self.controller = controller
-        self.id = random.randrange(2 ** 10, 2 ** 15)
+        self.id = random.randrange(2**10, 2**15)
         if reactor is None:
             from twisted.internet import reactor
         self._reactor = reactor

@@ -75,7 +75,6 @@ class StubUnixConchUser:
 
 
 class TestSSHSessionForUnixConchUser(unittest.TestCase):
-
     if cryptography is None:
         skip = "Cannot run without cryptography"
     elif unix is None:

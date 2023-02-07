@@ -638,6 +638,7 @@ class FlattenerErrorTests(SynchronousTestCase):
         If a L{FlattenerError} is created with traceback frames, they are
         included in the string representation of the exception.
         """
+
         # Try to be realistic in creating the data passed in for the traceback
         # frames.
         def f() -> None:
